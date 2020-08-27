@@ -1,0 +1,11 @@
+<div *ngIf="authors">
+    <div *ngFor="let author of authors">
+        <a [routerLink]="['/author']">
+        {{author.first_name}}
+        {{author.last_name}}
+        {{author.dob}}
+    
+    </a>
+    </div>
+    <button (click)="delete(author)">delete</button>
+</div>

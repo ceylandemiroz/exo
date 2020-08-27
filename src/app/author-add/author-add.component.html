@@ -1,0 +1,41 @@
+<h1>
+    
+    New Author:
+</h1> 
+<form [formGroup]="createForm" (ngSubmit)="create()">
+    <div>
+      <label> First Name: </label>   
+    </div>
+    <input required type="text" formControlName="Author">
+    <div>
+        <label> Last Name:</label>
+    </div>
+    <input required type="text" formControlName="Author">
+    <div>
+        <label>Nationality: </label>     
+    </div>
+    <div>
+        <select id="nationality">
+          <option value="france">France</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    <div>
+        <label> Dob:</label>    
+    </div>
+    <input  type="date" formControlName="Author">
+    <div>
+        <label> Dod: </label>    
+    </div>
+    <input  type="date" formControlName="Author">
+    <div>
+        <label> Dead: </label>    
+    </div>
+    <input  type="date" formControlName="Author">
+
+<div>
+    <button type="submit" >Create</button>
+</div>
+</form>
